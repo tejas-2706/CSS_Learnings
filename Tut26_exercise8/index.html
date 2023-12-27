@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Bounce Animation</title>
+    <style>
+        .container{
+            position: relative;
+            width: 80vw;
+            height: 80vh;
+            background-color: blue;
+        }
+        .box{
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 70px;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: BounceAnimationY; */
+            /* animation-name: BounceAnimationX; */
+            /* animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-fill-mode: backwards; */
+
+            /* animation: BounceAnimationY 3s ease-in 1s alternate-reverse ; */
+            animation: BounceAnimationX 3s linear infinite, BounceAnimationY 1s ease-out alternate infinite;
+        }
+
+
+        @keyframes BounceAnimationX{
+            from{
+                /* transform: translateY(-200px); */
+                left: 0;
+            }
+            to{
+                /* transform: translateX(100px); */
+                left: 100%;
+            }
+        }
+
+
+        @keyframes BounceAnimationY {
+            from{
+                /* transform: translateY(-200px); */
+                bottom: 0;
+            }
+            to{
+                transform: translateX(-0px);
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- X animation different and Y animation different -->
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

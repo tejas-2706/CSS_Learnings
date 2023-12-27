@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height:10vh;
+    /* background-color: red; */
+    margin-right: 20px;
+    font-family:'Segoe UI';
+}
+nav ul{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 30px;
+    font-size:20px;
+    cursor: pointer;
+}
+nav #img1{
+    width: 200px;
+    margin-right: auto;
+    margin-left: 50px;
+    /* display: flex;
+    align-items: flex-start; */
+}
+nav #img2{
+    width: 40px;
+}

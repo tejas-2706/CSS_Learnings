@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            /* content,border and padding include in 200px heoght whrn using box sizing*/
+            box-sizing: border-box; /* changes height definition*/
+        }
+        .box2{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            /* content,border and padding include in 200px heoght whrn using box sizing*/
+            box-sizing: border-box; /* changes height definition*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        i am box1
+    </div>
+    <div class="box box2">
+        i am box2
+    </div>
+</body>
+</html>
